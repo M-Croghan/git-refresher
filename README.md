@@ -33,6 +33,12 @@ Repositories can be set-up in a few ways:
 
 It is important to be mindful that initializing a repository only need occur once in the main / root directory of a project. Things can get messy if sub-directories are also initlized.
 
+## <span style="color: yellow;">Comparing & Inspecting Changes</span>
+* ```$ git status```
+* ```$ git diff```
+* ```$ git log```
+
+
 ## <span style="color: yellow;">Adding & Commiting</span>
 Git as a version control environment can be thought of as 4 distinct areas:
 
@@ -71,4 +77,3 @@ Merges can confound the commit history and the approach to merging can vary (i.e
 
 ## <span style="color: yellow;">Updating & Sharing</span>
 
-## <span style="color: yellow;">Comparing & Inspecting Changes</span>
