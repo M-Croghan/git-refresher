@@ -3,7 +3,7 @@
 ## Links
 - [Git Documentation & Reference Guide](https://git-scm.com/docs)
 
-## Configuration
+## <span style="color: yellow;">Configuration</span>
 While using a GUI like [GitKraken](https://gitkraken.com) can make things easier and help in visualizing workflows, comfort on the command line is extremely important.
 
 ```$ git config``` : allows one to configure options for a local repository or the global functionality of git itself.
@@ -22,10 +22,18 @@ While using a GUI like [GitKraken](https://gitkraken.com) can make things easier
         * Using a wildcard / pattern: <span style="color: red;">_*.log_</span> 
         * The contents of a folder: <span style="color: red;">_my-directory/_</span>
 
-## Creating & Accessing Projects
+## <span style="color: yellow;">Creating & Accessing Projects</span>
+Repositories can be set-up in a few ways:
+1. On the creation of a new directory
+    * ```$ git init <directory_name>```
+2. Initializing a repository while in an existing directory
+    * ```$ git init```
+3. Cloning an existing repository
+    * ```$ git clone <github.com/link>```
 
-## Branching & Merging
+It is important to be mindful that initializing a repository only need occur once in the main / root directory of a project. Things can get messy if sub-directories are also initlized.
+## <span style="color: yellow;">Branching & Merging</span>
 
-## Updating & Sharing
+## <span style="color: yellow;">Updating & Sharing</span>
 
-## Comparing & Inspecting Changes
+## <span style="color: yellow;">Comparing & Inspecting Changes</span>
