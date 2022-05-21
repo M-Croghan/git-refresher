@@ -109,3 +109,6 @@ An important concept within git is that of the ***HEAD***. The HEAD can be thoug
 
 ## <span style="color: yellow;">Remote Tracking & GitHub</span>
 
+```$ git fetch```
+```$ git pull```
+```$ git push```
