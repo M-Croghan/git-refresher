@@ -80,6 +80,7 @@ An important concept within git is that of the ***HEAD***. The HEAD can be thoug
 
 ```Checkout``` allows one the ability to travel through the commit history to a specific point in time. Doing so results in a ***DETACHED HEAD*** and can provide for the inspection of a given commit and allow to branch off from it.
 
+* ```$ git checkout <commit hash>``` - points to the specified commit, resulting in a Detached HEAD
 * ```$ git checkout HEAD~#``` - The # represents a number of commits PRIOR to the HEAD location (i.e. HEAD~2 will go back 2 commits).
 * ```$ git checkout HEAD <filename>``` or ```$ git checkout -- <filename>``` - can be used to clear changes since the most current commit
 
@@ -87,6 +88,9 @@ An important concept within git is that of the ***HEAD***. The HEAD can be thoug
 
 * ```$ git restore <filename>``` - restores the file to the state of the last commit BEFORE any changes were made.
 * ```$ git restore --staged <filename>``` - unstages any work waiting in staging area waiting to be commited.
+
+* ```$ git reset <commit hash>``` - clears the commits up to the specified commit but keeps the changes.
+* ```$ git reset --hard <commit hash> - clears the commits AND the working directory.
 
 
 ## <span style="color: yellow;">Updating & Sharing</span>
