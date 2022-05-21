@@ -75,5 +75,19 @@ It may be appropriate to work directly on the main / master branch of a project 
 
 Merges can confound the commit history and the approach to merging can vary (i.e. Fast-forward merges, merge commits, etc.).
 
+## <span style="color: yellow;">Checkout & HEAD</span>
+An important concept within git is that of the ***HEAD***. The HEAD can be thought of a bit like a bookmark which denotes on which branch or commit the repo is currently open to.
+
+```Checkout``` allows one the ability to travel through the commit history to a specific point in time. Doing so results in a ***DETACHED HEAD*** and can provide for the inspection of a given commit and allow to branch off from it.
+
+* ```$ git checkout HEAD~#``` - The # represents a number of commits PRIOR to the HEAD location (i.e. HEAD~2 will go back 2 commits).
+* ```$ git checkout HEAD <filename>``` or ```$ git checkout -- <filename>``` - can be used to clear changes since the most current commit
+
+## <span style="color: yellow;">Restore, Revert, & Reset</span>
+
+* ```$ git restore <filename>``` - restores the file to the state of the last commit BEFORE any changes were made.
+* ```$ git restore --staged <filename>``` - unstages any work waiting in staging area waiting to be commited.
+
+
 ## <span style="color: yellow;">Updating & Sharing</span>
 
