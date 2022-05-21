@@ -30,10 +30,17 @@ Repositories can be set-up in a few ways:
     * ```$ git init```
 3. Cloning an existing repository
     * ```$ git clone <github.com/link>```
+<<<<<<< HEAD
 
 It is important to be mindful that initializing a repository only need occur once in the main / root directory of a project. Things can get messy if sub-directories are also initlized.
 ## <span style="color: yellow;">Branching & Merging</span>
 
 ## <span style="color: yellow;">Updating & Sharing</span>
 
+=======
+## <span style="color: yellow;">Branching & Merging</span>
+
+## <span style="color: yellow;">Updating & Sharing</span>
+
+>>>>>>> a00911bf6c2e48fa81ec0b9bb1397ed92a043ce7
 ## <span style="color: yellow;">Comparing & Inspecting Changes</span>
