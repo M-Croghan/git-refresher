@@ -55,6 +55,18 @@ The ```working directory``` can be thought of as the region where change takes p
 The fourth area of the version control environment is the ```remote repository``` (i.e. GitHub). This external repository allows for us to back-up our projects, share our work, and collaborate with others.
 
 ## <span style="color: yellow;">Stashing</span>
+Sometimes it may be necessary to switch branches BEFORE the current work in the working directory is ready to be staged and committed. In some cases, changing a branch won't cause any significant issue and the changes will simply follow you. Other times a conflict will prevent you from changing branch and require you to either commit or ***stash*** your work.
+
+```Stashing``` is a way to save your work on a branch without committing. The stash operates similar to a stack data structure where what is saved is pushed onto and can be poped off of the stack.
+
+* ```$ git stash``` or ```$ git stash save``` - saves all changes (both staged & unstaged).
+* ```$ git stash pop``` - reapplies the changes wherever you are AND remove those changes from the stash.
+* ```$ git stash apply``` - applies the changes wherever you are WITHOUT removing those changes from the stash.
+* ```$ git stash list``` - lists the changes in the stack, labeled to differentiate between changes: ***Stash@{1}, Stash@{2}***
+    * Pop & Apply can be appended with the stash ID to apply the specific item in the stash
+* ```$ git stash drop``` - removes the top most item in the stash.
+    * Can also drop by using the Stash@{id}.
+* ```$ git stash clear``` -  remove all items from the stash.
 
 ## <span style="color: yellow;">Branching & Merging</span>
 It may be appropriate to work directly on the main / master branch of a project if you are the only one contributing to it. However, as the scale of a project and the number of contributors working on it grows, it becomes increasingly important to pay attention to branching and the overall workflow.
