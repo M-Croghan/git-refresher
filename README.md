@@ -54,6 +54,8 @@ The ```working directory``` can be thought of as the region where change takes p
 
 The fourth area of the version control environment is the ```remote repository``` (i.e. GitHub). This external repository allows for us to back-up our projects, share our work, and collaborate with others.
 
+## <span style="color: yellow;">Stashing</span>
+
 ## <span style="color: yellow;">Branching & Merging</span>
 It may be appropriate to work directly on the main / master branch of a project if you are the only one contributing to it. However, as the scale of a project and the number of contributors working on it grows, it becomes increasingly important to pay attention to branching and the overall workflow.
 
