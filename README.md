@@ -107,5 +107,5 @@ An important concept within git is that of the ***HEAD***. The HEAD can be thoug
 * ```$ git reset --hard <commit hash> - clears the commits AND the working directory.
 
 
-## <span style="color: yellow;">Updating & Sharing</span>
+## <span style="color: yellow;">Remote Tracking & GitHub</span>
 
