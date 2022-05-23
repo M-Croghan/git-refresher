@@ -104,11 +104,25 @@ An important concept within git is that of the ***HEAD***. The HEAD can be thoug
 * ```$ git restore --staged <filename>``` - unstages any work waiting in staging area waiting to be commited.
 
 * ```$ git reset <commit hash>``` - clears the commits up to the specified commit but keeps the changes.
-* ```$ git reset --hard <commit hash> - clears the commits AND the working directory.
+* ```$ git reset --hard <commit hash>``` - clears the commits AND the working directory.
+
 
 
 ## <span style="color: yellow;">Remote Tracking & GitHub</span>
+* ```$ git fetch```: Retrieves remote changes & brings them down to the local repository.
+    * Gets the information WITHOUT merging changes to current existing work.
+* ```$ git pull```: Grab the changes from the remote and pull them into the local repository.
+    * Merges with the existing work locally.
+* ```$ git push```: Pushes the work local to remote.
 
-```$ git fetch```
-```$ git pull```
-```$ git push```
+The remote tracking branch has a direct relationship to a remote branch whereby ```git push``` / ```git pull``` work without additional arguements.
+
+Merge conflicts are always a possibility when attempting to retrieve or incorperate changes. A good rule of thumb is to pull down any changes that may have occured before pushing to the remote. An example of this would be in the case of contributing to an open source project, where the existing project is _forked_ to your own GitHub account, cloning that existing project to your local machine, and pushing any changes to that forked repository and making pull requests from there. One can set the upstream to the actual live project to retrieve changes.
+
+## <span style="color: yellow;">Rebasing</span>
+* An alternative to _merge_ & clean up tool.
+    * Helps combine changes from 2 branches.
+    * Rewrite history (essentially clears the merge commits)
+* Appends the commits / changes to the end of a specified branch
+
+<img src="content/rb.png">
