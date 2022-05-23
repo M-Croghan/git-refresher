@@ -126,3 +126,22 @@ Merge conflicts are always a possibility when attempting to retrieve or incorper
 * Appends the commits / changes to the end of a specified branch
 
 <img src="content/rb.png">
+
+## <span style="color: yellow;">Tags</span>
+Tags act as a pointer to a specific commit. they are commonly used to mark a release version and exist in two distinct forms:
+* ***Lightweight:*** Consisting of just a name / title.
+* ***Annotated:*** Contains additional metadata.
+
+Tags & semantic versioning often go hand and hand:
+
+<img src="content/semver.png">
+
+* ```$ git tag```: List all tags in the current repository.
+* ```$ git checkout <tag>```: Result in detached HEAD just like using a commit hash.
+* ```$ git diff <tag1> <tag2>```: Check changes between 2 tags.
+* ```$ git tag <tag name>```: Creates a lightweight tag on whatever HEAD is referencing.
+* ```$ git tag -a <tag name>```: Creates an annotated tag on whatever HEAD is referencing.
+    * ```$ git show <tag name>```: Show metadata on a tag.
+* ```$ git tag <tag name> <commit>```: Tag a specific commit.
+* ```$ git tag -f <tag name> <hash>```: Moves a tag (Note! - tags must be unique!).
+* ```$ git tag -d <tag name>```: Delete specified tag.
