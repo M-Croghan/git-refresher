@@ -2,6 +2,7 @@
 
 ## Links
 - [Git Documentation & Reference Guide](https://git-scm.com/docs)
+- [Learn Git Branching](https://learngitbranching.js.org/)
 
 ## <span style="color: yellow;">Configuration</span>
 While using a GUI like [GitKraken](https://gitkraken.com) can make things easier and help in visualizing workflows, comfort on the command line is extremely important.
